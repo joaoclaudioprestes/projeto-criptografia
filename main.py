@@ -53,3 +53,7 @@ if __name__ == '__main__':
             elif opcao.lower() == 'f':
                 print('Obrigado por utilizar nosso software!')
                 break
+
+
+
+

@@ -14,12 +14,12 @@ def salvar_cripto(mensagem, key, text):
     else:
         print('Operação finalizada!')
 
-def salvar_decript(text_cripto, key, text):
+def salvar_decript(mensagem, key, text):
     salvar_operacao = input('Deseja salvar essa operação: [S] ou [N]: ')
 
     if salvar_operacao.lower() == 's':
         new_id = gerar_id.gerar_id()
-        update = {'id': new_id, 'mensagem': text, 'criptografada': text_cripto, 'key': key, 'descriptografada': text}
+        update = {'id': new_id, 'mensagem': text, 'criptografada': mensagem, 'key': key, 'descriptografada': text}
         config.banco_historico.append(update)
         print('Operação salva!')
 
