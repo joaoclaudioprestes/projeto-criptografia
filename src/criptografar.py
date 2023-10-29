@@ -6,7 +6,7 @@ def cesar_encript(mensagem, key):
     for i in mensagem: 
         if i in config.alfabeto:
             index = config.alfabeto.find(i)
-            new_index = (index + key) % len(config.alfabeto)
+            new_index = (index + int(key)) % len(config.alfabeto)
             rotacionar.novo_index(new_index)
             text_cripto += config.alfabeto[new_index]
         else:
@@ -19,7 +19,7 @@ def cesar_encript2(cesar, key):
     for i in cesar:
         if i in config.alphabet:
             index = config.alphabet.find(i)
-            new_index = (index + key) % len(config.alphabet)
+            new_index = (index + int(key)) % len(config.alphabet)
             rotacionar.novo_index(new_index)
             text_cripto += config.alphabet[new_index]
         else:
