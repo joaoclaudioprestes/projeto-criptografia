@@ -7,27 +7,26 @@
 ---
 
 ## **Visão Geral**
-Este projeto foi desenvolvido durante o segundo semestre da faculdade de Ciências da Computação, explorando métodos avançados de criptografia para garantir a segurança das mensagens.
+Este projeto, desenvolvido durante o segundo semestre do curso de Ciências da Computação, explora métodos avançados de criptografia para garantir a segurança das mensagens.
 
 ---
 
 ## **Funcionalidades**
 
 ### *Cifra de César em Dois Fatores* 🔄🔑
-A Cifra de César em dois fatores é uma variação do método clássico que envolve deslocamentos de caracteres em duas etapas consecutivas, adicionando uma camada extra de segurança à mensagem.
+A variação da clássica Cifra de César envolve deslocamentos de caracteres em duas etapas consecutivas, adicionando uma camada extra de segurança à mensagem.
 
 ### *Conversão para Hexadecimal* 🔒
-Após aplicar a Cifra de César em dois fatores, as mensagens criptografadas foram convertidas para representação hexadecimal, aumentando ainda mais a segurança.
+Após aplicar a Cifra de César em dois fatores, as mensagens criptografadas são convertidas para representação hexadecimal, ampliando a segurança dos dados.
 
 ---
 
 ## **Resultados**
 
-Durante o desenvolvimento, implementamos algoritmos eficientes de criptografia, garantindo a segurança das mensagens. Os métodos utilizados proporcionaram um aumento significativo na proteção das informações.
+Durante o desenvolvimento, foram implementados algoritmos eficientes de criptografia, garantindo a segurança das mensagens. Os métodos utilizados proporcionaram um aumento significativo na proteção das informações.
 
 ---
 
 ## **Conclusão**
 
-A combinação de métodos como a Cifra de César em dois fatores e a conversão para hexadecimal oferece uma camada adicional de proteção para as mensagens. Este projeto foi uma valiosa introdução ao mundo da criptografia, destacando a importância da segurança da informação. 👨‍💻🔐
-
+A combinação de técnicas como a Cifra de César em dois fatores e a conversão para hexadecimal oferece uma camada adicional de proteção às mensagens. Este projeto representou uma valiosa introdução ao universo da criptografia, destacando a importância da segurança da informação. 👨‍💻🔐
