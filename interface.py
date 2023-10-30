@@ -61,7 +61,7 @@ while True:
     # Verifica o evento "Descriptografar"
     elif event == 'Descriptografar':
         # Verifica a validade da mensagem e da chave inseridas
-        if len(values['mensagem']) > 130 or not values['mensagem'] or not values['chave']:
+        if len(values['mensagem']) > 128 or not values['mensagem'] or not values['chave']:
             Popup('Invalido! Mensagem maior que 130 caracteres ou campos em branco.')
             window['mensagem'].update(value='')
             window['chave'].update(value='') 

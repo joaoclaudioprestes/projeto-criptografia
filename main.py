@@ -8,9 +8,7 @@ import os
 
 # Verifica se este script é o ponto de entrada principal do programa
 if __name__ == '__main__':
-    os.system('cls')  # Limpa a tela do terminal (para Windows)
-
-    # Exibe um título no terminal
+    os.system('cls')
     print(f'{" CRIPTOGRAFIA DE CESAR ":=^40}')
 
     # Inicia um loop para exibir o menu e lidar com as escolhas do usuário
@@ -26,8 +24,8 @@ if __name__ == '__main__':
             # Solicita ao usuário que insira uma mensagem a ser criptografada
             mensagem = input('\nDigite a mensagem a ser criptografada: ')
 
-            # Verifica se o tamanho da mensagem é inferior a 130 caracteres
-            if len(mensagem) < 130:
+            # Verifica se o tamanho da mensagem é inferior a 128 caracteres
+            if len(mensagem) < 128:
                 while True:
                     key = input(f'Digite sua chave (entre 1 e {len(config.alfabeto) - 1}): ')
                     if key.isnumeric():  # Verifica se a entrada é numérica
@@ -52,12 +50,12 @@ if __name__ == '__main__':
             # Solicita ao usuário que insira uma mensagem criptografada a ser descriptografada
             text_cripto = input('\nDigite a mensagem a ser descriptografada: ')
 
-            if len(text_cripto) < 130:
+            if len(text_cripto) < 128:
                 while True:
                     key = input(f'Digite sua chave (entre 1 e {len(config.alfabeto) - 1}): ')
                     if key.isnumeric():  # Verifica se a entrada é numérica
                         key = int(key)
-                        if 1 <= key <= len(config.alfabeto) - 1:  # Verifica se a chave está dentro do intervalo válido
+                        if key <= len(config.alfabeto) - 1:  # Verifica se a chave está dentro do intervalo válido
                             break  # Interrompe o loop se as condições forem atendidas
                         else:
                             print('Chave inválida! A chave deve estar no intervalo de 1 a', len(config.alfabeto) - 1)
